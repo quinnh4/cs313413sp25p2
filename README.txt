@@ -33,31 +33,31 @@ TestPerformance.java
 	These are examples of SIZEs you might choose, you can choose others if you wish.
 
 	SIZE 10
-								  #1     #2     #3
+				  #1     #2     #3
         testArrayListAddRemove:  351ms  314ms  240ms
         testLinkedListAddRemove:  20ms   19ms   21ms
-		testArrayListAccess:      11ms   11ms   12ms
+	testArrayListAccess:      11ms   11ms   12ms
         testLinkedListAccess:     11ms    9ms    9ms
 
 	SIZE 100
-								  #1     #2     #3
+				  #1     #2     #3
         testArrayListAddRemove:  323ms  385ms  358ms
         testLinkedListAddRemove:  18ms   19ms   20ms
-		testArrayListAccess:      14ms   11ms   12ms
+	testArrayListAccess:      14ms   11ms   12ms
         testLinkedListAccess:     20ms   21ms   23ms
 
 	SIZE 1000
-								  #1     #2     #3
+				  #1     #2     #3
         testArrayListAddRemove:  419ms  469ms  485ms
         testLinkedListAddRemove:  18ms   19ms   20ms
-		testArrayListAccess:      10ms   11ms   11ms
+	testArrayListAccess:      10ms   11ms   11ms
         testLinkedListAccess:    205ms  328ms  328ms
 
 	SIZE 10000
-								     #1            #2              #3
+				     #1            #2              #3
         testArrayListAddRemove:   2sec 96ms     1sec 896ms      1sec 779ms
         testLinkedListAddRemove:       22ms           22ms            23ms
-		testArrayListAccess:           13ms           12ms            13ms
+	testArrayListAccess:           13ms           12ms            13ms
         testLinkedListAccess:    4sec 730ms     4sec 661ms      4sec 211ms
 
 	listAccess - which type of List is better to use, and why?
