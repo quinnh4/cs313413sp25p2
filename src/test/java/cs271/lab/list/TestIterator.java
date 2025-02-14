@@ -5,6 +5,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
+import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -20,7 +21,6 @@ public class TestIterator {
   @Before
   public void setUp() throws Exception {
     list = new ArrayList<Integer>();
-    // TODO Question: Also try with a LinkedList - does it make any difference?
   }
 
   @After
@@ -46,7 +46,7 @@ public class TestIterator {
     final var i = list.iterator();
     assertTrue(i.hasNext());
     assertEquals(33, i.next().intValue());
-    // TODO fix the expected values in the assertions below
+    // fixed the expected values in the assertions below
     assertTrue(i.hasNext());
     assertEquals(77, i.next().intValue());
     assertTrue(i.hasNext());
@@ -74,10 +74,10 @@ public class TestIterator {
     final var i = list.iterator();
     while (i.hasNext()) {
       if (i.next() == 77) {
-        i.remove(); // TODO Question: What happens if you use list.remove(Integer.valueOf(77))?
+        i.remove();
       }
     }
-    // TODO using assertEquals and List.of, express which values are left in the list
+    // used assertEquals and List.of, express which values are left in the list
     // See TestList.java for examples of how to use List.of; also see the Java List
     // interface for more information
     assertEquals(List.of(33, 44, 55, 66), list);
@@ -94,7 +94,7 @@ public class TestIterator {
     list.add(66);
     double sum = 0;
     int n = 0;
-    // TODO use an iterator and a while loop to compute the average (mean) of the values
+    // used an iterator and a while loop to compute the average (mean) of the values
     // (defined as the sum of the items divided by the number of items)
     // testNonempty shows how to use an iterator; use i.hasNext() in the while loop condition
     final var i = list.iterator();
